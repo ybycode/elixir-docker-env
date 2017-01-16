@@ -10,7 +10,7 @@ images of Elixir apps, for development, and for releases, using Distillery:
 - one script to create a self contained docker image of a Distillery release,
 - lightweight:
 
-    - development image: 38MB,
+    - development image: 70MB (Elixir + Phoenix + Nodejs),
     - release image: 27MB.
 
 # Usage
@@ -67,7 +67,7 @@ Use the `run-dev.sh` to run command in the elixir/Phoenix dev environement:
 
 ```
 $ # create a new Phoenix app. Use '.' as destination:
-$ ./run-dev.sh mix phoenix.new . --app my_app --no-ecto --no-brunch
+$ ./run-dev.sh mix phoenix.new . --app my_app --no-ecto
 $ # run it:
 $ ./run-dev.sh mix phoenix.server
 ```
